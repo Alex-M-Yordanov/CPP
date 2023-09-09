@@ -1,7 +1,6 @@
 #include <iostream>
 size_t const maxn=128;
 
-
 unsigned Power(unsigned num, unsigned power)
 {
     if(power<1)
