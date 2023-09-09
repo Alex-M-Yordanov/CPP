@@ -9,13 +9,6 @@ unsigned Power(unsigned num, unsigned power)
   return num*Power(num,power-1);
 }
 
-unsigned sumdigits (unsigned a)
-{
-   if(a==0)
-    return 0;
-  return a%10 + sumdigits(a/10);
-}
-
 unsigned prod(unsigned c, unsigned b)
 {
      if(b==0)
@@ -44,13 +37,7 @@ int main()
     unsigned power;
     std::cin>>power;
     std::cout<<Power(num,power);
-
-    std::cout<<std::endl;
-    unsigned a;
-    std::cin>>a;
-    std::cout<<std::endl;
-    std::cout<<sumdigits(a);
-
+    
     std::cout<<std::endl;
     unsigned c,b;
     std::cin>>c>>b;
