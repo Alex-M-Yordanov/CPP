@@ -20,11 +20,18 @@
  * Time Complexity: O(V)
    
  * Memory Complexity: O(V)
+   
    >Note: V is the number of nodes in the tree.
 
 ##### Graphs:
-* Time Complexity: O(V+E)
+   #### Usage:
+        - Finding the shortest path between 2 edges.
+        - Locatic a cycle.
+        
+ * Time Complexity: O(V+E)
    
  * Memory Complexity: O(V+E)
-   >Note: V is the number of nodes in the tree.
+   
+   >Note: V is the number of vertices and E is the number of edges in the graph.
+   >Note: Used for unweighted and undirected graphs.
 
