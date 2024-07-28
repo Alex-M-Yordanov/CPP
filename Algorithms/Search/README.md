@@ -12,4 +12,4 @@
    
  * Memory Complexity: O(1)
 
-   > Note: Binary Searched works with sorted arrays.
+   > Note: Binary Search works with sorted arrays.
