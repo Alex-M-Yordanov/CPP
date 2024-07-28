@@ -16,6 +16,10 @@
 
 ## BFS
 
+ #### Usage:
+        Finding the shortest path between 2 edges.
+        Locating a cycle.
+
  ##### Trees:
  * Time Complexity: O(V)
    
@@ -24,9 +28,7 @@
    >Note: V is the number of nodes in the tree.
 
 ##### Graphs:
-   #### Usage:
-        - Finding the shortest path between 2 edges.
-        - Locatic a cycle.
+  
         
  * Time Complexity: O(V+E)
    
