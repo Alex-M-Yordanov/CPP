@@ -22,3 +22,9 @@
  * Memory Complexity: O(V)
    >Note: V is the number of nodes in the tree.
 
+##### Graphs:
+* Time Complexity: O(V+E)
+   
+ * Memory Complexity: O(V+E)
+   >Note: V is the number of nodes in the tree.
+
