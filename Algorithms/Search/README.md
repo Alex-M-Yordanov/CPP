@@ -17,7 +17,7 @@
 ## BFS
 
  #### Usage:
- * Finding the shortest path between 2 edges.
+ * Finding the shortest path.
  * Locating a cycle.
 
  #### Trees:
