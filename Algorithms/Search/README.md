@@ -17,8 +17,8 @@
 ## BFS
 
  #### Usage:
-    Finding the shortest path between 2 edges.
-    Locating a cycle.
+ Finding the shortest path between 2 edges.
+ Locating a cycle.
 
  ##### Trees:
  * Time Complexity: O(V)
