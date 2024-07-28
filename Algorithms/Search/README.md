@@ -1,13 +1,13 @@
 
 ## Linear Search
 
- * Time Complexity:
+ * Time Complexity: O(n)
    
- * Memory Complexity:
+ * Memory Complexity: O(1)
 
 
 ## Binary Search
 
- * Time Complexity:
+ * Time Complexity: O(log n)
    
- * Memory Complexity:
+ * Memory Complexity: O(1)
