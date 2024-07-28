@@ -52,13 +52,10 @@ NNode* initializeN()
 
     return root;
 }
-
 void deallocateB(BNode* root)
 {
     if(root == nullptr)
-    {
-      return;
-    }
+       return;
     
     deallocateB(root->left);
     deallocateB(root->right);
@@ -137,6 +134,47 @@ void BFS_N(NNode* root)
 }
 
 
+std::vector<int> shortestPath(NNode* root, int target)
+{
+    if(root == nullptr)
+    {
+        return {};
+    }
+
+    std::queue<std::vector<NNode*>> queue;
+    queue.push({root});
+
+    while(!queue.empty())
+    {
+        std::vector<NNode*> path = queue.front();
+        queue.pop();
+
+        NNode* node = path.back();
+
+        if(node->value == target)
+        {
+            std::vector<int> result;
+            for(NNode* n: path)
+            {
+                result.push_back(n->value);
+            }
+            return result;
+        }
+
+        for(NNode* child: node->children)
+        {
+            if(child != nullptr)
+            {
+                std::vector<NNode*> newPath = path;
+                newPath.push_back(child);
+                queue.push(newPath);
+            }
+        }
+    }
+
+    return {};
+}
+
 int main()
 {
     BNode* Broot = initializeB();
@@ -147,6 +185,14 @@ int main()
     NNode* Nroot = initializeN();
     BFS_N(Nroot);
 
+    int target = 7;
+    std::vector<int> path = shortestPath(Nroot,target);
+    
+    std::cout<<std::endl;
+    for(int val: path)
+    {
+        std::cout<<val<<" ";
+    }
     deallocateB(Broot);
     deallocateN(Nroot);
     
