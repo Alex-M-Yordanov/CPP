@@ -31,7 +31,7 @@
   
  * Time Complexity: O(V+E)
    
- * Memory Complexity: O(V+E)
+ * Memory Complexity: O(V)
    
    >Note: V is the number of vertices and E is the number of edges in the graph.
    >Note: Used for unweighted and undirected graphs.
@@ -43,9 +43,19 @@
 * Shortest path (although BFS would be better suited)
 * Traversal
 
-  * Time Complexity: O(V)
+ #### Trees:
+ * Time Complexity: O(V)
    
- * Memory Complexity: O(V)
+ * Memory Complexity: O(H)
    
-   >Note: V is the number of nodes in the tree. 
+   >Note: V is the number of nodes in the tree and H is the height of the tree.
+   
+#### Graphs
+* Time Complexity: O(V+E)
+   
+* Memory Complexity: O(V)
+   
+   >Note: V is the number of vertices and E is the number of edges in the graph.
+   >Note: Used for unweighted and undirected graphs.
+
 
