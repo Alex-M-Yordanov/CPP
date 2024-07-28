@@ -36,3 +36,16 @@
    >Note: V is the number of vertices and E is the number of edges in the graph.
    >Note: Used for unweighted and undirected graphs.
 
+## DFS
+#### Usage:
+* Three hight/depth calculation
+* Cycle detection
+* Shortest path (although BFS would be better suited)
+* Traversal
+
+  * Time Complexity: O(V)
+   
+ * Memory Complexity: O(V)
+   
+   >Note: V is the number of nodes in the tree. 
+
