@@ -1,1 +1,5 @@
 
+## Linear Search
+
+
+## Binary Search
