@@ -34,7 +34,9 @@
  * Memory Complexity: O(V)
    
    >Note: V is the number of vertices and E is the number of edges in the graph.
-   >Note: Used for unweighted and undirected graphs.
+
+
+    >Note: Used for unweighted and undirected graphs.
 
 ## DFS
 #### Usage:
@@ -56,6 +58,5 @@
 * Memory Complexity: O(V)
    
    >Note: V is the number of vertices and E is the number of edges in the graph.
-   >Note: Used for unweighted and undirected graphs.
 
 
