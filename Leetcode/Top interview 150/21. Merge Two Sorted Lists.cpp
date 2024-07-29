@@ -2,6 +2,7 @@ class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         
+       
         if(!list1)
         {
             return list2;
@@ -10,44 +11,43 @@ public:
         {
             return list1;
         }
-        ListNode* it1=list1;
-        ListNode* it2=list2;
+        
         ListNode* begin;
         if(list1->val > list2->val) 
         {
             begin=list2;
-            it2=it2->next;
+            list2=list2->next;
         } 
         else
         {
             begin=list1;
-            it1=it1->next;
+            list1=list1->next;
         } 
-        ListNode* it=begin;
         
-
-        while(it1 && it2)
+        ListNode* it=begin;
+    
+        while(list1 && list2)
         {
-           if(it1->val < it2->val)
+           if(list1->val < list2->val)
            {
-            it->next=it1;
-            it1=it1->next;
+            it->next=list1;
+            list1=list1->next;
            }
            else
            {
-            it->next=it2;
-            it2=it2->next;
+            it->next=list2;
+            list2=list2->next;
            }
            it=it->next;
         }
 
-        if(!it2)
+        if(!list2)
         {
-            it->next = it1;
+            it->next = list1;
         }
-        else if(!it1)
+        else if(!list1)
         {
-            it->next = it2;
+            it->next = list2;
         }
         return begin;
        }
