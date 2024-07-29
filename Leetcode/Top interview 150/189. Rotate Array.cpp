@@ -5,7 +5,7 @@ public:
     int len=nums.size();
     if(k>len)
     {
-        k%=len;
+        k %= len;
     }
     for(int i=0; i<len-k;++i)
     {
