@@ -25,6 +25,7 @@ int binarySearch(int arr[], int size, int target)
     }
 
     return -1;
+    //return left;     // if you want to return where the target should have been
 }
 
 int main()
