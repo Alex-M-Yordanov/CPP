@@ -1,0 +1,62 @@
+class Solution {
+public:
+    bool wordPattern(string pattern, string s) {
+        
+        vector<string> words;
+        string word;
+
+        for(char c: s)
+        {
+            if(c == ' ')
+            {
+                if(!word.empty())
+                {
+                    words.push_back(word);
+                    word.clear();
+                }
+            }
+            else
+            {
+                word += c;
+            }
+        }
+
+        if(!word.empty())
+        {
+            words.push_back(word);
+        }
+
+        int len = pattern.size();
+        if(words.size() != len)
+        {
+            return false;
+        }
+
+        unordered_map<string, char> sp;
+        unordered_map<char, string> ps;
+
+        for(int i=0; i<len; ++i)
+        {
+            if(sp.find(words[i]) == sp.end())
+            {
+                sp[words[i]] = pattern[i];
+            }
+            else if(sp[words[i]] != pattern[i])
+            {
+               return false;
+            }
+
+            if(ps.find(pattern[i]) == ps.end())
+            {
+                ps[pattern[i]] = words[i];
+            }
+            else if(ps[pattern[i]] != words[i])
+            {
+               return false;
+            }
+        }
+
+        return true;
+
+    }
+};
